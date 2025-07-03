@@ -53,20 +53,6 @@ final class AddNoteFeatureTests: XCTestCase {
         
         store.exhaustivity = .off
     }
-    
-//    func testNoteDeletion() async {
-//        let note  = Note.mock
-//        let store = TestStore(
-//            initialState: NotesListFeature.State(user: User(id:"1234", email:"e@gmail.com"), notes: [.mock])
-//        ) {
-//            NotesListFeature()
-//        }
-//        
-//        
-//        await store.send(.deleteNote([0])) {
-//            $0.syncUps = []
-//        }
-//    }
 }
 
 
