@@ -15,8 +15,8 @@ A location note-taking app built with SwiftUI and The Composable Architecture (T
 
 ### Prerequisites
 
-- Xcode 14.0+
-- iOS 15.0+
+- Xcode 16.0+
+- iOS 17.0+
 - Firebase project with Authentication and Firestore enabled
 
 ### Installation
