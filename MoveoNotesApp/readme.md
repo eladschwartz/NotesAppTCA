@@ -23,7 +23,7 @@ A location note-taking app built with SwiftUI and The Composable Architecture (T
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone <[repository-url](https://github.com/eladschwartz/NotesAppTCA/tree/main/MoveoNotesApp)>
    cd MoveoNotesApp
    ```
 
