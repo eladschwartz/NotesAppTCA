@@ -53,41 +53,6 @@ This app follows TCA principles for predictable state management:
 - **Reducers**: Pure functions that evolve state based on actions
 - **Effects**: Handle side effects like API calls
 
-### Project Structure
-
-```
-MoveoNotesApp/
-├── App/
-│   ├── MoveoNotesAppApp.swift      # App entry point
-│   ├── RootReducer.swift            
-│   └── RootView.swift               
-├── Features/
-│   ├── Authentication/
-│   │   ├── AuthenticationFeature.swift
-│   │   └── AuthenticationView.swift
-│   ├── Welcome/
-│   │   ├── WelcomeFeature.swift
-│   │   └── WelcomeView.swift
-│   ├── NotesList/
-│   │   ├── NotesListFeature.swift
-│   │   ├── NotesListView.swift
-│   │   └── Components/
-│   ├── EditNote/
-│   │   ├── EditNoteFeature.swift
-│   │   └── EditNoteView.swift
-│   └── NotesMap/
-│       ├── NotesMapFeature.swift
-│       └── NotesMapView.swift
-├── Models/
-│   └── Note.swift                  # Core data model
-├── Clients/
-│   ├── AuthenticationClient.swift  # Firebase Auth wrapper
-│   ├── NotesClient.swift          # Firestore operations
-│   └── LocationClient.swift       # Core Location wrapper
-└── Helpers/
-    ├── Helpers.swift              # Utility extensions
-    └── MNLocationManager.swift    # Location manager
-```
 
 ## Key Architecture Decisions
 
