@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E47615E82E13E30300C8BF28 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = E47615E72E13E30300C8BF28 /* ComposableArchitecture */; };
+		E47616C12E157A4900C8BF28 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E47616C02E157A4900C8BF28 /* FirebaseAuth */; };
+		E47616C32E157A4900C8BF28 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = E47616C22E157A4900C8BF28 /* FirebaseCore */; };
+		E47616C52E157A4900C8BF28 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E47616C42E157A4900C8BF28 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		E47615CA2E13DED300C8BF28 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +34,7 @@
 		E47615B92E13DED100C8BF28 /* MoveoNotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoveoNotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E47615C92E13DED300C8BF28 /* MoveoNotesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoveoNotesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E47615D32E13DED300C8BF28 /* MoveoNotesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoveoNotesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4AFD9DC2E16836400BCF083 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +60,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E47615E82E13E30300C8BF28 /* ComposableArchitecture in Frameworks */,
+				E47616C52E157A4900C8BF28 /* FirebaseFirestore in Frameworks */,
+				E47616C32E157A4900C8BF28 /* FirebaseCore in Frameworks */,
+				E47616C12E157A4900C8BF28 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +90,7 @@
 				E47615BB2E13DED100C8BF28 /* MoveoNotesApp */,
 				E47615CC2E13DED300C8BF28 /* MoveoNotesAppTests */,
 				E47615D62E13DED300C8BF28 /* MoveoNotesAppUITests */,
+				E4AFD9D92E16835D00BCF083 /* Frameworks */,
 				E47615BA2E13DED100C8BF28 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +103,14 @@
 				E47615D32E13DED300C8BF28 /* MoveoNotesAppUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E4AFD9D92E16835D00BCF083 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4AFD9DC2E16836400BCF083 /* XCTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +133,10 @@
 			);
 			name = MoveoNotesApp;
 			packageProductDependencies = (
+				E47615E72E13E30300C8BF28 /* ComposableArchitecture */,
+				E47616C02E157A4900C8BF28 /* FirebaseAuth */,
+				E47616C22E157A4900C8BF28 /* FirebaseCore */,
+				E47616C42E157A4900C8BF28 /* FirebaseFirestore */,
 			);
 			productName = MoveoNotesApp;
 			productReference = E47615B92E13DED100C8BF28 /* MoveoNotesApp.app */;
@@ -195,6 +220,10 @@
 			);
 			mainGroup = E47615B02E13DED100C8BF28;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E47615E62E13E30300C8BF28 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				E47616BF2E157A4900C8BF28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E47615BA2E13DED100C8BF28 /* Products */;
 			projectDirPath = "";
@@ -396,13 +425,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MoveoNotesApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 74TQN32785;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Need for note location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need for note location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -424,13 +455,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MoveoNotesApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 74TQN32785;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Need for note location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need for note location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -552,6 +585,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E47615E62E13E30300C8BF28 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.20.2;
+			};
+		};
+		E47616BF2E157A4900C8BF28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E47615E72E13E30300C8BF28 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E47615E62E13E30300C8BF28 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		E47616C02E157A4900C8BF28 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E47616BF2E157A4900C8BF28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		E47616C22E157A4900C8BF28 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E47616BF2E157A4900C8BF28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		E47616C42E157A4900C8BF28 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E47616BF2E157A4900C8BF28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E47615B12E13DED100C8BF28 /* Project object */;
 }
